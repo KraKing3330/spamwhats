@@ -1,8 +1,8 @@
 # spamwhats
 Spam a Whatsapp
 
---Instalacion
+--Instalacion:
 pip install requirements.txt
 
---Ejecucion
+--Ejecucion:
 python3 spamwhats.py
