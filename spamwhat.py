@@ -2,12 +2,21 @@ import pyautogui as pg
 import webbrowser as web
 from time import sleep
 import os
-try:
-    os.system("cls")
-except:
-    os.system("clear")
 
-numero = int(input("Inserte un numero sin el simbolo + : "))
+os.system("clear")
+
+print('''
+BANNER EN REPARACION!!!
+__                     _        __           _
+/ _| _ _   _ _ _ _ _\ \      / / |_   _ | | _
+\__ \| ' \ / ` | ' ` _ \ \ /\ / /| '_ \ / ` | _/ __|
+ _) | |) | (| | | | | | \ V  V / | | | | (| | |\__ \
+ 
+|_/| ./ \,|| || ||\/\_/  || ||\_,|\_|__/
+      |_|
+''')
+    
+numero = int(input("Inserte un numero +"))
 print("")
 texto = str(input("Texto a enviar: "))
 web.open("https://web.whatsapp.com/send?phone=+{}".format(numero))
